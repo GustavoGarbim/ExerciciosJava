@@ -5,19 +5,16 @@ import java.util.Scanner;
 public class ex026 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         double preco1 = 10.0;
         double preco2 = 15.0;
         double preco3 = 20.0;
         double preco4 = 25.0;
 
-        Scanner sc = new Scanner(System.in);
-
         System.out.print("Digite o código do produto (1-4): ");
-        int codigo = sc.nextInt();
+        int codigo = scanner.nextInt();
 
         System.out.print("Digite a quantidade comprada: ");
-        int quantidade = sc.nextInt();
+        int quantidade = scanner.nextInt();
 
         double preco;
 
@@ -35,7 +32,6 @@ public class ex026 {
         }
         else{
             System.out.println("Código de produto inválido.");
-            sc.close();
             return;
         }
         double total = preco * quantidade;
