@@ -5,9 +5,8 @@ import java.util.Scanner;
 public class ex042 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int num = scanner.nextInt();
-
         System.out.println("Digite um número: ");
+        int num = scanner.nextInt();
 
         int i = 2;
         boolean verf_primo = true;
@@ -26,10 +25,10 @@ public class ex042 {
         }
 
         if(verf_primo){
-            System.out.println(num + " é verf_primo");
+            System.out.println(num + " é número primo");
         }
         else{
-            System.out.println(num + " não é verf_primo");
+            System.out.println(num + " não é número primo");
         }
     }
 }
