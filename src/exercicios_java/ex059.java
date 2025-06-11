@@ -2,25 +2,27 @@ package exercicios_java;
 
 import java.util.Scanner;
 
-public class ex044 {
+public class ex059 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         int somaIdades = 0;
-        int cont = 1;
+        int contadorPessoas = 1;
 
-        while (cont <= 5) {
-            System.out.print("Digite o nome da " + cont + "ª pessoa: ");
+        do{
+            System.out.print("Digite o nome da " + contadorPessoas + " pessoa: ");
             String nome = scanner.next();
 
             System.out.print("Digite a idade de " + nome + ": ");
             int idade = scanner.nextInt();
 
-            somaIdades += idade;
-            cont++;
+            somaIdades = somaIdades + idade;
+            contadorPessoas++;
         }
+        while (contadorPessoas <= 5);
 
         double media = (double) somaIdades / 5;
-        System.out.println("\nA média de idade das 5 pessoas é: " + media);
+
+        System.out.println("A média de idade das 5 pessoas é: " + media);
     }
 }
